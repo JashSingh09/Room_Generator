@@ -12,11 +12,16 @@ selected_room=${room_size[$RANDOM % 3]}
 echo "you entered a $selected_room room"
 
 
-if ["$selected_room" = "small" ]; then
+if [ "$selected_room" == "small" ]; then
 	echo "you enter the small room"
 
-elif ["$selected_room" = "normal" ]; then
+elif [ "$selected_room" == "normal" ]; then
 	echo "you entered a normal room "
 
-else ["$selected_room" = "Huge" ]; then
+elif [ "$selected_room" == "Huge" ]; then
 	echo "YOU ARE COOKED, YOU ENTERED THE HUGE ROOM"
+fi
+
+
+
+# i understand what i have been doing wrong -Jashan
