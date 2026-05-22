@@ -10,3 +10,6 @@ room_size=("small" "normal" "Huge")
 selected_room=${room_size[$RANDOM % 3]}
 
 echo "you entered a $selected_room room"
+
+
+if [$selected_room =small ]: then
